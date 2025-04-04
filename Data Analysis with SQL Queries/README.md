@@ -10,7 +10,7 @@ To ensure that the benchmarking process is fair the following was implemented:
 - workflow - the workflow is kept as similar as possible
 
 #### Project Structure
-
+'
 .vscode/                      # VSCode workspace configurations
 data/                         # Directory containing data files (SQLite database, user questions and expected answers)
 logs/                         # Directory for storing log files
@@ -23,13 +23,14 @@ Data Analysis with SQL Queries, CrewAI.py  # Main script for executing CrewAI ta
 Data Analysis with SQL Queries, LangGraph, LLM only.py  # LLM-only script for LangGraph processing
 Data Analysis with SQL Queries, LangGraph, Multiple Nodes.py  # Multiple nodes LangGraph setup
 Data Analysis with SQL Queries, LangGraph, Simple Agent.py  # Simple agent LangGraph setup
+'
 
 #### Requirements
 
 You can install the required dependencies using pip by running:
-
+'
 pip install -r requirements.txt
-
+'
 Configuration
 
 Before running the project, you need to configure the settings in the config.yaml file. This file contains configuration settings for logging, benchmarking, and API keys for external services (such as Groq and OpenAI). Make sure to enter the correct API keys and configuration options according to your environment. The config.yaml used as an example is available in the repository.
