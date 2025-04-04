@@ -9,36 +9,19 @@ To ensure that the benchmarking process is fair the following was implemented:
 - tools - the agents use three identical tools: list_tables_tool and get_schema_tool are taken from the from the tools in langchain_community. execute_sql_tool is a custom tool
 - workflow - the workflow is kept as similar as possible
 
-#### Project Structure
-'
-.vscode/                      # VSCode workspace configurations
-data/                         # Directory containing data files (SQLite database, user questions and expected answers)
-logs/                         # Directory for storing log files
-results/                      # Directory where results will be stored
-utils/                        # Utility scripts for logging, metrics collection, and other helpers
-.gitignore                    # Git ignore configuration file
-config.yaml                  # Configuration file for the application
-
-Data Analysis with SQL Queries, CrewAI.py  # Main script for executing CrewAI tasks
-Data Analysis with SQL Queries, LangGraph, LLM only.py  # LLM-only script for LangGraph processing
-Data Analysis with SQL Queries, LangGraph, Multiple Nodes.py  # Multiple nodes LangGraph setup
-Data Analysis with SQL Queries, LangGraph, Simple Agent.py  # Simple agent LangGraph setup
-'
-
 #### Requirements
 
 You can install the required dependencies using pip by running:
-'
+
 pip install -r requirements.txt
-'
-Configuration
+
+#### Configuration
 
 Before running the project, you need to configure the settings in the config.yaml file. This file contains configuration settings for logging, benchmarking, and API keys for external services (such as Groq and OpenAI). Make sure to enter the correct API keys and configuration options according to your environment. The config.yaml used as an example is available in the repository.
 
 Additionally, the environment variables for API keys (GROQ_API_KEY and OPENAI_API_KEY) need to be set. You can either manually set these variables in an .env file or input them when prompted.
 
-Usage
-Running the Benchmark
+#### Running the Benchmark
 
 To run the benchmark, to measure the performance of the three frameworks, use the following command:
 
