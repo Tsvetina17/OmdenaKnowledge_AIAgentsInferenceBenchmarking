@@ -6,7 +6,7 @@ To ensure that the benchmarking process is fair the following was implemented:
 - LLM and environment - the same configurations for the LLM and environment were used for all frameworks
 - evaluating answers - the list of sample user questions that need to be answered by the AI agents can be answered with a single numerical value. The answers are then compared to the expected values. The percentage of correct answers is saved in the final results for the benchmark.
 - prompt - the prompt used in all frameworks is the same prompt retrieved from Langchain's documentation and adjusted slightly for the scenario.
-- tools - the agents use three identical tools: list_tables_tool and get_schema_tool are taken from the from the tools in langchain_community. execute_sql_tool is a custom tool
+- tools - the agents use three identical tools: list_tables_tool and get_schema_tool are taken from the tools in langchain_community. execute_sql_tool is a custom tool
 - workflow - the workflow is kept as similar as possible
 
 #### Requirements
